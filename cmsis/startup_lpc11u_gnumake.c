@@ -28,11 +28,11 @@ extern "C"
 extern "C" {
 #endif
 
-extern unsigned int __data_load_addr;
-extern unsigned int __data_start;
-extern unsigned int __data_end;
-extern unsigned int __bss_start;
-extern unsigned int __bss_end;
+//extern unsigned int __data_load_addr;
+//extern unsigned int __data_start;
+//extern unsigned int __data_end;
+//extern unsigned int __bss_start;
+//extern unsigned int __bss_end;
 extern unsigned int __StackTop;
 #ifdef FIXED_STACKHEAP_SIZE
 #define STACK_SIZE  (800)
@@ -177,20 +177,20 @@ void Reset_Handler(void)
    * Only Initialize Internal SRAM
    * USB RAM is used for USB purpose
    */
-  unsigned int *src, *dst;
+  //unsigned int *src, *dst;
 
   /* Copy data section from flash to RAM */
-  src = &__data_load_addr;
-  dst = &__data_start;
-  while (dst < &__data_end)
-    *dst++ = *src++;
+  //src = &__data_load_addr;
+  //dst = &__data_start;
+  //while (dst < &__data_end)
+  //  *dst++ = *src++;
 
   /* Zero fill the bss section */
-  dst = &__bss_start;
-  while (dst < &__bss_end)
-    *dst++ = 0;
+  //dst = &__bss_start;
+  //while (dst < &__bss_end)
+  //  *dst++ = 0;
 
-  SystemInit();
+  //SystemInit();
 
 #if defined (__cplusplus)
   //

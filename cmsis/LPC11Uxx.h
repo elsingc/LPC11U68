@@ -50,7 +50,7 @@ typedef enum {
   PendSV_IRQn                       = -2,   /*!<  14  Pendable request for system service */
   SysTick_IRQn                      = -1,   /*!<  15  System Tick Timer                */
 // ---------------------------  LPC11Uxx Specific Interrupt Numbers  ------------------------------
-FLEX_INT0_IRQn                = 0,        /*!< All I/O pins can be routed to below 8 interrupts. */
+  FLEX_INT0_IRQn                = 0,        /*!< All I/O pins can be routed to below 8 interrupts. */
   FLEX_INT1_IRQn                = 1,
   FLEX_INT2_IRQn                = 2,
   FLEX_INT3_IRQn                = 3,

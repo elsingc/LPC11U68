@@ -52,6 +52,7 @@ extern "C" {
 
 #define PORT0           (0)
 #define PORT1           (1)
+#define PORT2			(2)
 
 #define GROUP0          (0)
 #define GROUP1          (1)

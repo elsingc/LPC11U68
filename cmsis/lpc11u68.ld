@@ -8,7 +8,7 @@ MEMORY
   isram (rwx)     : ORIGIN = 0x10000000,  LENGTH = 32K /*0x8000   36k   */
 }
 
-__StackTop = ORIGIN(isram) + LENGTH(isram);
+__StackTop = 0x00000000; /*ORIGIN(isram) + LENGTH(isram);*/
 
 ENTRY(Reset_Handler)
 
@@ -27,7 +27,7 @@ SECTIONS
 		__text_end = .;
 	} > irom
 	
-	/* MAIN BSS SECTION */
+	/* MAIN BSS SECTION 
 	.bss 0x10000100: ALIGN(4)
 	{
 		__bss_start = .;
@@ -50,7 +50,7 @@ SECTIONS
 		*(.data*)
 		. = ALIGN(4) ;
 		__data_end = .;
-	} > isram AT>irom
+	} > isram AT>irom*/
 	
 	/* Define a symbol for the start of heap */
 	/* It won't be used if user defined FIXED_STACKHEAP_SIZE */
