@@ -628,7 +628,7 @@ typedef struct {
 #define LPC_GPIO_GROUP_INT0_BASE  (0x4005C000)
 #define LPC_GPIO_GROUP_INT1_BASE  (0x40060000)
 #define LPC_USB_BASE              (0x40080000)
-#define LPC_GPIO_BASE             (0x50000000)
+#define LPC_GPIO_BASE             (0xA0000000)
 
 
 // ------------------------------------------------------------------------------------------------
