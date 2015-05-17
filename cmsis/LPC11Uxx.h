@@ -567,24 +567,43 @@ typedef struct {                            /*!< (@ 0x40080000) USB Structure   
 /**
   * @brief Product name title=UM10462 Chapter title=LPC11U1x GPIO Modification date=3/17/2011 Major revision=0 Minor revision=3  (GPIO_PORT)
   */
-
+#if 0
 typedef struct {                            
-  union {
-    struct {
-      __IO uint8_t B0[32];                       /*!< (@ 0x50000000) Byte pin registers port 0; pins PIO0_0 to PIO0_31 */
-      __IO uint8_t B1[32];                       /*!< (@ 0x50000020) Byte pin registers port 1 */
-    };
-    __IO uint8_t B[64];                       /*!< (@ 0x50000000) Byte pin registers port 0/1 */
-  };
-  __I  uint32_t RESERVED0[1008];
-  union {
-    struct {
-      __IO uint32_t W0[32];                      /*!< (@ 0x50001000) Word pin registers port 0 */
-      __IO uint32_t W1[32];                      /*!< (@ 0x50001080) Word pin registers port 1 */
-    };
-    __IO uint32_t W[64];                       /*!< (@ 0x50001000) Word pin registers port 0/1 */
-  };
-       uint32_t RESERVED1[960];
+  //union {
+  //  struct {
+  //    __IO uint8_t B0[32];                       /*!< (@ 0x50000000) Byte pin registers port 0; pins PIO0_0 to PIO0_31 */
+  //    __IO uint8_t B1[32];                       /*!< (@ 0x50000020) Byte pin registers port 1 */
+  //    __IO uint8_t B2[32];                       /*!< (@ 0x50000020) Byte pin registers port 1 */
+  //  };
+  //  __IO uint8_t B[96];                       /*!< (@ 0x50000000) Byte pin registers port 0/1 */
+  //};
+  //__I  uint32_t RESERVED0[8192];
+  //union {
+  //  struct {
+  //    __IO uint32_t W0[32];                      /*!< (@ 0x50001000) Word pin registers port 0 */
+  //    __IO uint32_t W1[32];                      /*!< (@ 0x50001080) Word pin registers port 1 */
+  //  };
+  //  __IO uint32_t W[64];                       /*!< (@ 0x50001000) Word pin registers port 0/1 */
+  //};
+  //     uint32_t RESERVED1[960];
+	union {
+	    struct {
+	      __IO uint8_t B0[32];                       /*!< (@ 0x50000000) Byte pin registers port 0; pins PIO0_0 to PIO0_31 */
+	      __IO uint8_t B1[32];                       /*!< (@ 0x50000020) Byte pin registers port 1 */
+	      __IO uint8_t B2[32];                       /*!< (@ 0x50000020) Byte pin registers port 1 */
+	    };
+	    __IO uint8_t B[96];                       /*!< (@ 0x50000000) Byte pin registers port 0/1 */
+	  };
+	  __I  uint32_t RESERVED0[8192];
+	  union {
+	    struct {
+	      __IO uint32_t W0[32];                      /*!< (@ 0x50001000) Word pin registers port 0 */
+	      __IO uint32_t W1[32];                      /*!< (@ 0x50001080) Word pin registers port 1 */
+	    };
+	    __IO uint32_t W[64];                       /*!< (@ 0x50001000) Word pin registers port 0/1 */
+	  };
+	       uint32_t RESERVED1[960];
+	__I  uint32_t RESERVED0[8192];
   __IO uint32_t DIR[2];			/* 0x2000 */
        uint32_t RESERVED2[30];
   __IO uint32_t MASK[2];		/* 0x2080 */
@@ -600,6 +619,19 @@ typedef struct {
   __O  uint32_t NOT[2];			/* 0x2300 */
 } LPC_GPIO_Type;
 
+#else
+typedef struct {				/*!< GPIO_PORT Structure */
+	__IO uint8_t B[128][32];	/*!< Offset 0x0000: Byte pin registers ports 0 to n; pins PIOn_0 to PIOn_31 */
+	__IO uint32_t W[32][32];	/*!< Offset 0x1000: Word pin registers port 0 to n */
+	__IO uint32_t DIR[32];		/*!< Offset 0x2000: Direction registers port n */
+	__IO uint32_t MASK[32];		/*!< Offset 0x2080: Mask register port n */
+	__IO uint32_t PIN[32];		/*!< Offset 0x2100: Portpin register port n */
+	__IO uint32_t MPIN[32];		/*!< Offset 0x2180: Masked port register port n */
+	__IO uint32_t SET[32];		/*!< Offset 0x2200: Write: Set register for port n Read: output bits for port n */
+	__O  uint32_t CLR[32];		/*!< Offset 0x2280: Clear port n */
+	__O  uint32_t NOT[32];		/*!< Offset 0x2300: Toggle port n */
+} LPC_GPIO_Type;
+#endif
 
 #if defined ( __CC_ARM   )
   #pragma no_anon_unions

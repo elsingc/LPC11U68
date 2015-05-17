@@ -1,5 +1,7 @@
 Archive member included because of file (symbol)
 
+c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_thumb1_case_uqi.o)
+                              bin/obj/gpio.o (__gnu_thumb1_case_uqi)
 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
                               bin/obj/system_LPC11Uxx.o (__aeabi_uidiv)
 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
@@ -44,32 +46,33 @@ Discarded input sections
  .text          0x00000000        0x0 bin/obj/system_LPC11Uxx.o
  .data          0x00000000        0x0 bin/obj/system_LPC11Uxx.o
  .bss           0x00000000        0x0 bin/obj/system_LPC11Uxx.o
- .text.SystemInit
-                0x00000000       0xe0 bin/obj/system_LPC11Uxx.o
  .text          0x00000000        0x0 bin/obj/printf-retarget.o
  .data          0x00000000        0x0 bin/obj/printf-retarget.o
  .bss           0x00000000        0x0 bin/obj/printf-retarget.o
  .text.__putchar
                 0x00000000       0x24 bin/obj/printf-retarget.o
- .text.puts     0x00000000       0x1c bin/obj/printf-retarget.o
- .debug_info    0x00000000      0x171 bin/obj/printf-retarget.o
- .debug_abbrev  0x00000000      0x12a bin/obj/printf-retarget.o
+ .text.puts     0x00000000       0x14 bin/obj/printf-retarget.o
+ .debug_info    0x00000000      0x16d bin/obj/printf-retarget.o
+ .debug_abbrev  0x00000000      0x128 bin/obj/printf-retarget.o
  .debug_loc     0x00000000       0x3f bin/obj/printf-retarget.o
  .debug_aranges
                 0x00000000       0x28 bin/obj/printf-retarget.o
  .debug_ranges  0x00000000       0x18 bin/obj/printf-retarget.o
- .debug_line    0x00000000      0x161 bin/obj/printf-retarget.o
- .debug_str     0x00000000      0x1ee bin/obj/printf-retarget.o
+ .debug_line    0x00000000      0x163 bin/obj/printf-retarget.o
+ .debug_str     0x00000000      0x1e4 bin/obj/printf-retarget.o
  .comment       0x00000000       0x71 bin/obj/printf-retarget.o
  .debug_frame   0x00000000       0x40 bin/obj/printf-retarget.o
  .ARM.attributes
-                0x00000000       0x31 bin/obj/printf-retarget.o
+                0x00000000       0x32 bin/obj/printf-retarget.o
  .text          0x00000000        0x0 bin/obj/main.o
  .data          0x00000000        0x0 bin/obj/main.o
  .bss           0x00000000        0x0 bin/obj/main.o
  .text          0x00000000        0x0 bin/obj/delay.o
  .data          0x00000000        0x0 bin/obj/delay.o
  .bss           0x00000000        0x0 bin/obj/delay.o
+ .text.delayInit
+                0x00000000       0x4c bin/obj/delay.o
+ .text.delay    0x00000000       0x30 bin/obj/delay.o
  .text.delayGetTicks
                 0x00000000        0xc bin/obj/delay.o
  .text.delayGetRollovers
@@ -79,35 +82,13 @@ Discarded input sections
  .text          0x00000000        0x0 bin/obj/fifo.o
  .data          0x00000000        0x0 bin/obj/fifo.o
  .bss           0x00000000        0x0 bin/obj/fifo.o
- .text.fifo_read
-                0x00000000       0x80 bin/obj/fifo.o
- .text.fifo_readArray
-                0x00000000       0x30 bin/obj/fifo.o
  .text.fifo_peek
-                0x00000000       0x48 bin/obj/fifo.o
- .text.fifo_write
-                0x00000000       0x94 bin/obj/fifo.o
- .text.fifo_clear
-                0x00000000       0x34 bin/obj/fifo.o
- .debug_info    0x00000000      0x7c0 bin/obj/fifo.o
- .debug_abbrev  0x00000000      0x2d2 bin/obj/fifo.o
- .debug_loc     0x00000000      0x4d8 bin/obj/fifo.o
- .debug_aranges
                 0x00000000       0x40 bin/obj/fifo.o
- .debug_ranges  0x00000000       0xf0 bin/obj/fifo.o
- .debug_line    0x00000000      0x2f7 bin/obj/fifo.o
- .debug_str     0x00000000      0x538 bin/obj/fifo.o
- .comment       0x00000000       0x71 bin/obj/fifo.o
- .debug_frame   0x00000000       0x98 bin/obj/fifo.o
- .ARM.attributes
-                0x00000000       0x31 bin/obj/fifo.o
  .text          0x00000000        0x0 bin/obj/gpio.o
  .data          0x00000000        0x0 bin/obj/gpio.o
  .bss           0x00000000        0x0 bin/obj/gpio.o
  .text.GPIOSetPinInterrupt
-                0x00000000      0x16c bin/obj/gpio.o
- .rodata.GPIOSetPinInterrupt
-                0x00000000       0x20 bin/obj/gpio.o
+                0x00000000       0xf4 bin/obj/gpio.o
  .text.GPIOPinIntEnable
                 0x00000000       0x28 bin/obj/gpio.o
  .text.GPIOPinIntDisable
@@ -117,250 +98,101 @@ Discarded input sections
  .text.GPIOPinIntClear
                 0x00000000       0x14 bin/obj/gpio.o
  .text.GPIOSetGroupedInterrupt
-                0x00000000       0xd4 bin/obj/gpio.o
+                0x00000000       0xa8 bin/obj/gpio.o
  .text.GPIOGetPinValue
-                0x00000000       0x3c bin/obj/gpio.o
+                0x00000000       0x36 bin/obj/gpio.o
+ .text.GPIOSetBitValue
+                0x00000000       0x1e bin/obj/gpio.o
+ .text.GPIOSetDir
+                0x00000000       0x32 bin/obj/gpio.o
  .text          0x00000000        0x0 bin/obj/stdio.o
  .data          0x00000000        0x0 bin/obj/stdio.o
  .bss           0x00000000        0x0 bin/obj/stdio.o
  .text.append_char
-                0x00000000        0x8 bin/obj/stdio.o
- .text.PutString
-                0x00000000       0x30 bin/obj/stdio.o
- .text.PutUnsignedInt
-                0x00000000       0x58 bin/obj/stdio.o
- .text.PutSignedInt
-                0x00000000       0x94 bin/obj/stdio.o
- .text.PutHexa  0x00000000       0x58 bin/obj/stdio.o
- .text.PutFloat
-                0x00000000       0xa4 bin/obj/stdio.o
- .text.PutFloatE
-                0x00000000      0x144 bin/obj/stdio.o
- .text.PutFloatEE
-                0x00000000      0x140 bin/obj/stdio.o
- .text.vsnprintf
-                0x00000000      0x218 bin/obj/stdio.o
- .rodata.vsnprintf
-                0x00000000       0xd0 bin/obj/stdio.o
+                0x00000000        0x6 bin/obj/stdio.o
  .text.snprintf
-                0x00000000       0x18 bin/obj/stdio.o
- .text.vsprintf
-                0x00000000       0x10 bin/obj/stdio.o
- .text.vprintf  0x00000000       0x44 bin/obj/stdio.o
- .text.printf   0x00000000       0x18 bin/obj/stdio.o
- .text.sprintf  0x00000000       0x1c bin/obj/stdio.o
- .rodata.str1.4
-                0x00000000       0x30 bin/obj/stdio.o
- .debug_info    0x00000000      0xdde bin/obj/stdio.o
- .debug_abbrev  0x00000000      0x2cc bin/obj/stdio.o
- .debug_loc     0x00000000     0x1663 bin/obj/stdio.o
- .debug_aranges
-                0x00000000       0x88 bin/obj/stdio.o
- .debug_ranges  0x00000000      0x180 bin/obj/stdio.o
- .debug_line    0x00000000      0x427 bin/obj/stdio.o
- .debug_str     0x00000000      0x2bd bin/obj/stdio.o
- .comment       0x00000000       0x71 bin/obj/stdio.o
- .debug_frame   0x00000000      0x1dc bin/obj/stdio.o
- .ARM.attributes
-                0x00000000       0x31 bin/obj/stdio.o
+                0x00000000       0x16 bin/obj/stdio.o
+ .text.vprintf  0x00000000       0x38 bin/obj/stdio.o
+ .text.printf   0x00000000       0x16 bin/obj/stdio.o
+ .rodata.str1.1
+                0x00000000       0x2d bin/obj/stdio.o
  .text          0x00000000        0x0 bin/obj/string.o
  .data          0x00000000        0x0 bin/obj/string.o
  .bss           0x00000000        0x0 bin/obj/string.o
- .text.memcpy   0x00000000       0x40 bin/obj/string.o
- .text.memset   0x00000000       0x44 bin/obj/string.o
- .text.memmove  0x00000000       0x30 bin/obj/string.o
- .text.memcmp   0x00000000       0x28 bin/obj/string.o
- .text.strchr   0x00000000       0x1c bin/obj/string.o
- .text.strlen   0x00000000       0x18 bin/obj/string.o
- .text.strrchr  0x00000000       0x1c bin/obj/string.o
- .text.strcpy   0x00000000       0x18 bin/obj/string.o
- .text.strncmp  0x00000000       0x30 bin/obj/string.o
- .text.strncpy  0x00000000       0x2c bin/obj/string.o
- .text.strcmp   0x00000000       0x1c bin/obj/string.o
+ .text.memmove  0x00000000       0x2a bin/obj/string.o
+ .text.memcmp   0x00000000       0x1c bin/obj/string.o
+ .text.strchr   0x00000000       0x14 bin/obj/string.o
+ .text.strrchr  0x00000000       0x16 bin/obj/string.o
+ .text.strcpy   0x00000000       0x12 bin/obj/string.o
+ .text.strncmp  0x00000000       0x22 bin/obj/string.o
+ .text.strncpy  0x00000000       0x1a bin/obj/string.o
+ .text.strcmp   0x00000000       0x1a bin/obj/string.o
  .text.strtok_r
-                0x00000000       0x5c bin/obj/string.o
+                0x00000000       0x56 bin/obj/string.o
  .text.strtok   0x00000000       0x10 bin/obj/string.o
  .bss.last.4092
                 0x00000000        0x4 bin/obj/string.o
- .debug_info    0x00000000      0x54c bin/obj/string.o
- .debug_abbrev  0x00000000      0x18a bin/obj/string.o
- .debug_loc     0x00000000      0x9a1 bin/obj/string.o
- .debug_aranges
-                0x00000000       0x80 bin/obj/string.o
- .debug_ranges  0x00000000       0x70 bin/obj/string.o
- .debug_line    0x00000000      0x266 bin/obj/string.o
- .debug_str     0x00000000      0x2b8 bin/obj/string.o
- .comment       0x00000000       0x71 bin/obj/string.o
- .debug_frame   0x00000000      0x134 bin/obj/string.o
- .ARM.attributes
-                0x00000000       0x31 bin/obj/string.o
  .text          0x00000000        0x0 bin/obj/descriptors.o
  .data          0x00000000        0x0 bin/obj/descriptors.o
  .bss           0x00000000        0x0 bin/obj/descriptors.o
- .data.USB_StringDescriptor
-                0x00000000       0x7c bin/obj/descriptors.o
- .rodata.USB_FsConfigDescriptor
-                0x00000000       0x40 bin/obj/descriptors.o
- .rodata.USB_DeviceDescriptor
-                0x00000000       0x14 bin/obj/descriptors.o
- .debug_info    0x00000000      0x5b5 bin/obj/descriptors.o
- .debug_abbrev  0x00000000       0xc4 bin/obj/descriptors.o
- .debug_aranges
-                0x00000000       0x18 bin/obj/descriptors.o
- .debug_line    0x00000000      0x143 bin/obj/descriptors.o
- .debug_str     0x00000000      0x71c bin/obj/descriptors.o
- .comment       0x00000000       0x71 bin/obj/descriptors.o
- .ARM.attributes
-                0x00000000       0x31 bin/obj/descriptors.o
  .text          0x00000000        0x0 bin/obj/usb_cdc.o
  .data          0x00000000        0x0 bin/obj/usb_cdc.o
  .bss           0x00000000        0x0 bin/obj/usb_cdc.o
- .text.CDC_SendBreak
-                0x00000000        0x4 bin/obj/usb_cdc.o
- .text.CDC_SetLineCoding
-                0x00000000       0x1c bin/obj/usb_cdc.o
- .text.CDC_BulkIn_Hdlr
-                0x00000000       0x44 bin/obj/usb_cdc.o
- .text.usb_cdc_recv_isr_default
-                0x00000000        0x4 bin/obj/usb_cdc.o
- .text.CDC_BulkOut_Hdlr
-                0x00000000       0x58 bin/obj/usb_cdc.o
  .text.usb_cdc_isConnected
                 0x00000000        0xc bin/obj/usb_cdc.o
  .text.usb_cdc_putc
-                0x00000000       0x44 bin/obj/usb_cdc.o
+                0x00000000       0x3c bin/obj/usb_cdc.o
  .text.usb_cdc_getc
-                0x00000000       0x18 bin/obj/usb_cdc.o
+                0x00000000       0x14 bin/obj/usb_cdc.o
  .text.usb_cdc_send
-                0x00000000       0x2c bin/obj/usb_cdc.o
+                0x00000000       0x2a bin/obj/usb_cdc.o
  .text.usb_cdc_recv
-                0x00000000       0x20 bin/obj/usb_cdc.o
- .text.usb_cdc_init
-                0x00000000       0xc4 bin/obj/usb_cdc.o
- .text.usb_cdc_configured
-                0x00000000       0x44 bin/obj/usb_cdc.o
- .data.ff_cdc_tx
-                0x00000000       0x10 bin/obj/usb_cdc.o
- .bss.isConnected
-                0x00000000        0x1 bin/obj/usb_cdc.o
- .bss.line_coding
-                0x00000000        0x8 bin/obj/usb_cdc.o
- .data.ff_cdc_rx
-                0x00000000       0x10 bin/obj/usb_cdc.o
- .bss.g_hCdc    0x00000000        0x4 bin/obj/usb_cdc.o
- .debug_info    0x00000000     0x1c58 bin/obj/usb_cdc.o
- .debug_abbrev  0x00000000      0x3f0 bin/obj/usb_cdc.o
- .debug_loc     0x00000000      0x53d bin/obj/usb_cdc.o
- .debug_aranges
-                0x00000000       0x78 bin/obj/usb_cdc.o
- .debug_ranges  0x00000000       0x68 bin/obj/usb_cdc.o
- .debug_line    0x00000000      0x3c4 bin/obj/usb_cdc.o
- .debug_str     0x00000000     0x16b2 bin/obj/usb_cdc.o
- .comment       0x00000000       0x71 bin/obj/usb_cdc.o
- .debug_frame   0x00000000      0x144 bin/obj/usb_cdc.o
- .ARM.attributes
-                0x00000000       0x31 bin/obj/usb_cdc.o
- COMMON         0x00000000       0x80 bin/obj/usb_cdc.o
+                0x00000000       0x1c bin/obj/usb_cdc.o
  .text          0x00000000        0x0 bin/obj/usbd.o
  .data          0x00000000        0x0 bin/obj/usbd.o
  .bss           0x00000000        0x0 bin/obj/usbd.o
- .text.USB_Reset_Event
-                0x00000000       0x10 bin/obj/usbd.o
- .text.USB_Configure_Event
-                0x00000000       0x24 bin/obj/usbd.o
  .text.usb_isConfigured
                 0x00000000        0xc bin/obj/usbd.o
- .text.usb_init
-                0x00000000      0x190 bin/obj/usbd.o
- .rodata        0x00000000       0x14 bin/obj/usbd.o
- .rodata.str1.4
-                0x00000000       0x30 bin/obj/usbd.o
- .data.usb_RomDriver_buffer
-                0x00000000        0x4 bin/obj/usbd.o
- .bss.isConfigured
-                0x00000000        0x1 bin/obj/usbd.o
+ .text          0x00000000       0x14 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_thumb1_case_uqi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_thumb1_case_uqi.o)
+ .ARM.attributes
+                0x00000000       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_thumb1_case_uqi.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
- .text          0x00000000      0x1e0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
- .debug_frame   0x00000000       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
- .ARM.attributes
-                0x00000000       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
- .text          0x00000000       0x7c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_arm_cmpdf2.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_arm_cmpdf2.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_arm_cmpdf2.o)
- .ARM.attributes
-                0x00000000       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_arm_cmpdf2.o)
- .text          0x00000000      0x650 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(adddf3.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(adddf3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(adddf3.o)
- .debug_frame   0x00000000       0x38 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(adddf3.o)
- .ARM.attributes
-                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(adddf3.o)
- .text          0x00000000      0x648 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divdf3.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divdf3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divdf3.o)
- .rodata        0x00000000       0x40 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divdf3.o)
- .debug_frame   0x00000000       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divdf3.o)
- .ARM.attributes
-                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divdf3.o)
- .text          0x00000000       0x88 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(eqdf2.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(eqdf2.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(eqdf2.o)
- .debug_frame   0x00000000       0x38 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(eqdf2.o)
- .ARM.attributes
-                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(eqdf2.o)
- .text          0x00000000       0xe0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(gedf2.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(gedf2.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(gedf2.o)
- .debug_frame   0x00000000       0x38 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(gedf2.o)
- .ARM.attributes
-                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(gedf2.o)
- .text          0x00000000       0xcc c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(ledf2.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(ledf2.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(ledf2.o)
- .debug_frame   0x00000000       0x38 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(ledf2.o)
- .ARM.attributes
-                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(ledf2.o)
- .text          0x00000000      0x534 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(muldf3.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(muldf3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(muldf3.o)
- .rodata        0x00000000       0x40 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(muldf3.o)
- .debug_frame   0x00000000       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(muldf3.o)
- .ARM.attributes
-                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(muldf3.o)
- .text          0x00000000      0x6f4 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(subdf3.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(subdf3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(subdf3.o)
- .debug_frame   0x00000000       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(subdf3.o)
- .ARM.attributes
-                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(subdf3.o)
- .text          0x00000000       0x6c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(fixdfsi.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(fixdfsi.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(fixdfsi.o)
- .debug_frame   0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(fixdfsi.o)
- .ARM.attributes
-                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(fixdfsi.o)
- .text          0x00000000       0x78 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsidf.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsidf.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsidf.o)
- .debug_frame   0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsidf.o)
- .ARM.attributes
-                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsidf.o)
- .text          0x00000000       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_clzsi2.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_clzsi2.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_clzsi2.o)
- .ARM.attributes
-                0x00000000       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_clzsi2.o)
 
 Memory Configuration
 
 Name             Origin             Length             Attributes
 irom             0x00000000         0x00040000         xr
 isram            0x10000000         0x00008000         xrw
+isramUsb         0x00000000         0xffffffff
 *default*        0x00000000         0xffffffff
 
 Linker script and memory map
@@ -383,9 +215,9 @@ START GROUP
 LOAD c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a
 LOAD c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc.a
 END GROUP
-                0x00000000                __StackTop = 0x0
+                0x10008000                __StackTop = (ORIGIN (isram) + 0x8000)
 
-.text           0x00000000      0x478
+.text           0x00000000     0x2ea0
                 0x00000000                __text_start = .
  FILL mask 0xff
  *(.isr_vector_table)
@@ -394,144 +226,314 @@ END GROUP
                 0x00000000                Vectors
  *(.after_vectors*)
  .after_vectors
-                0x000000c0       0x20 bin/obj/startup_lpc11u_gnumake.o
+                0x000000c0       0x1e bin/obj/startup_lpc11u_gnumake.o
                 0x000000c0                NMI_Handler
-                0x000000c4                HardFault_Handler
-                0x000000c8                SVC_Handler
-                0x000000cc                PendSV_Handler
-                0x000000d4                UART_IRQHandler
-                0x000000d4                TIMER32_0_IRQHandler
-                0x000000d4                FLEX_INT7_IRQHandler
-                0x000000d4                TIMER32_1_IRQHandler
-                0x000000d4                FLEX_INT1_IRQHandler
-                0x000000d4                IntDefaultHandler
-                0x000000d4                SSP0_IRQHandler
-                0x000000d4                FMC_IRQHandler
-                0x000000d4                USBWakeup_IRQHandler
-                0x000000d4                FLEX_INT0_IRQHandler
-                0x000000d4                FLEX_INT2_IRQHandler
-                0x000000d4                TIMER16_1_IRQHandler
-                0x000000d4                USB_FIQHandler
-                0x000000d4                FLEX_INT5_IRQHandler
-                0x000000d4                ADC_IRQHandler
-                0x000000d4                SSP1_IRQHandler
-                0x000000d4                FLEX_INT3_IRQHandler
-                0x000000d4                BOD_IRQHandler
-                0x000000d4                I2C_IRQHandler
-                0x000000d4                WDT_IRQHandler
-                0x000000d4                TIMER16_0_IRQHandler
-                0x000000d4                GINT0_IRQHandler
-                0x000000d4                FLEX_INT4_IRQHandler
-                0x000000d4                FLEX_INT6_IRQHandler
-                0x000000d4                GINT1_IRQHandler
-                0x000000d8                Reset_Handler
+                0x000000c2                SVC_Handler
+                0x000000c4                PendSV_Handler
+                0x000000c8                FMC_IRQHandler
+                0x000000c8                UART_IRQHandler
+                0x000000c8                TIMER32_0_IRQHandler
+                0x000000c8                FLEX_INT7_IRQHandler
+                0x000000c8                TIMER32_1_IRQHandler
+                0x000000c8                FLEX_INT1_IRQHandler
+                0x000000c8                IntDefaultHandler
+                0x000000c8                SSP0_IRQHandler
+                0x000000c8                FLEX_INT6_IRQHandler
+                0x000000c8                USBWakeup_IRQHandler
+                0x000000c8                FLEX_INT0_IRQHandler
+                0x000000c8                FLEX_INT2_IRQHandler
+                0x000000c8                TIMER16_1_IRQHandler
+                0x000000c8                USB_FIQHandler
+                0x000000c8                FLEX_INT5_IRQHandler
+                0x000000c8                ADC_IRQHandler
+                0x000000c8                SSP1_IRQHandler
+                0x000000c8                FLEX_INT3_IRQHandler
+                0x000000c8                BOD_IRQHandler
+                0x000000c8                I2C_IRQHandler
+                0x000000c8                WDT_IRQHandler
+                0x000000c8                TIMER16_0_IRQHandler
+                0x000000c8                GINT0_IRQHandler
+                0x000000c8                FLEX_INT4_IRQHandler
+                0x000000c8                GINT1_IRQHandler
+                0x000000ca                Reset_Handler
+                0x000000d6                HardFault_Handler
  *(.text*)
+ *fill*         0x000000de        0x2 
  .text.SystemCoreClockUpdate
                 0x000000e0       0xa0 bin/obj/system_LPC11Uxx.o
                 0x000000e0                SystemCoreClockUpdate
+ .text.SystemInit
+                0x00000180       0xb8 bin/obj/system_LPC11Uxx.o
+                0x00000180                SystemInit
  .text.startup.main
-                0x00000180       0x6c bin/obj/main.o
-                0x00000180                main
+                0x00000238       0x10 bin/obj/main.o
+                0x00000238                main
  .text.SysTick_Handler
-                0x000001ec       0x20 bin/obj/delay.o
-                0x000001ec                SysTick_Handler
- .text.delayInit
-                0x0000020c       0x4c bin/obj/delay.o
-                0x0000020c                delayInit
- .text.delay    0x00000258       0x3c bin/obj/delay.o
-                0x00000258                delay
+                0x00000248       0x20 bin/obj/delay.o
+                0x00000248                SysTick_Handler
+ .text.fifo_read
+                0x00000268       0x7c bin/obj/fifo.o
+                0x00000268                fifo_read
+ .text.fifo_readArray
+                0x000002e4       0x2a bin/obj/fifo.o
+                0x000002e4                fifo_readArray
+ *fill*         0x0000030e        0x2 
+ .text.fifo_write
+                0x00000310       0x90 bin/obj/fifo.o
+                0x00000310                fifo_write
+ .text.fifo_clear
+                0x000003a0       0x3c bin/obj/fifo.o
+                0x000003a0                fifo_clear
  .text.GPIOInit
-                0x00000294       0x1c bin/obj/gpio.o
-                0x00000294                GPIOInit
- .text.GPIOSetBitValue
-                0x000002b0       0x20 bin/obj/gpio.o
-                0x000002b0                GPIOSetBitValue
- .text.GPIOSetDir
-                0x000002d0       0x2c bin/obj/gpio.o
-                0x000002d0                GPIOSetDir
+                0x000003dc       0x1c bin/obj/gpio.o
+                0x000003dc                GPIOInit
+ .text.PutString
+                0x000003f8       0x30 bin/obj/stdio.o
+                0x000003f8                PutString
+ .text.PutUnsignedInt
+                0x00000428       0x4c bin/obj/stdio.o
+                0x00000428                PutUnsignedInt
+ .text.PutSignedInt
+                0x00000474       0x72 bin/obj/stdio.o
+                0x00000474                PutSignedInt
+ .text.PutHexa  0x000004e6       0x48 bin/obj/stdio.o
+                0x000004e6                PutHexa
+ *fill*         0x0000052e        0x2 
+ .text.PutFloat
+                0x00000530       0x84 bin/obj/stdio.o
+                0x00000530                PutFloat
+ .text.PutFloatE
+                0x000005b4      0x120 bin/obj/stdio.o
+                0x000005b4                PutFloatE
+ .text.PutFloatEE
+                0x000006d4      0x11c bin/obj/stdio.o
+                0x000006d4                PutFloatEE
+ .text.vsnprintf
+                0x000007f0      0x186 bin/obj/stdio.o
+                0x000007f0                vsnprintf
+ .text.vsprintf
+                0x00000976       0x10 bin/obj/stdio.o
+                0x00000976                vsprintf
+ .text.sprintf  0x00000986       0x16 bin/obj/stdio.o
+                0x00000986                sprintf
+ .text.memcpy   0x0000099c       0x44 bin/obj/string.o
+                0x0000099c                memcpy
+ .text.memset   0x000009e0       0x44 bin/obj/string.o
+                0x000009e0                memset
+ .text.strlen   0x00000a24       0x12 bin/obj/string.o
+                0x00000a24                strlen
+ .text.CDC_SendBreak
+                0x00000a36        0x4 bin/obj/usb_cdc.o
+                0x00000a36                CDC_SendBreak
+ *fill*         0x00000a3a        0x2 
+ .text.CDC_SetLineCoding
+                0x00000a3c       0x1c bin/obj/usb_cdc.o
+                0x00000a3c                CDC_SetLineCoding
+ .text.CDC_BulkIn_Hdlr
+                0x00000a58       0x40 bin/obj/usb_cdc.o
+                0x00000a58                CDC_BulkIn_Hdlr
+ .text.usb_cdc_recv_isr_default
+                0x00000a98        0x2 bin/obj/usb_cdc.o
+                0x00000a98                usb_cdc_recv_isr
+                0x00000a98                usb_cdc_recv_isr_default
+ *fill*         0x00000a9a        0x2 
+ .text.CDC_BulkOut_Hdlr
+                0x00000a9c       0x4c bin/obj/usb_cdc.o
+                0x00000a9c                CDC_BulkOut_Hdlr
+ .text.usb_cdc_init
+                0x00000ae8       0xbc bin/obj/usb_cdc.o
+                0x00000ae8                usb_cdc_init
+ .text.usb_cdc_configured
+                0x00000ba4       0x40 bin/obj/usb_cdc.o
+                0x00000ba4                usb_cdc_configured
+ .text.USB_Reset_Event
+                0x00000be4        0xc bin/obj/usbd.o
+                0x00000be4                USB_Reset_Event
+ .text.USB_Configure_Event
+                0x00000bf0       0x24 bin/obj/usbd.o
+                0x00000bf0                USB_Configure_Event
+ .text.usb_init
+                0x00000c14      0x18c bin/obj/usbd.o
+                0x00000c14                usb_init
  .text.USB_IRQHandler
-                0x000002fc       0x1c bin/obj/usbd.o
-                0x000002fc                USB_IRQHandler
- .text          0x00000318      0x120 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
-                0x00000318                __aeabi_uidiv
-                0x00000318                __udivsi3
-                0x00000424                __aeabi_uidivmod
- .text          0x00000438        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
-                0x00000438                __aeabi_idiv0
-                0x00000438                __aeabi_ldiv0
+                0x00000da0       0x1c bin/obj/usbd.o
+                0x00000da0                USB_IRQHandler
+ .text          0x00000dbc      0x120 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+                0x00000dbc                __aeabi_uidiv
+                0x00000dbc                __udivsi3
+                0x00000ec8                __aeabi_uidivmod
+ .text          0x00000edc      0x1e0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+                0x00000edc                __divsi3
+                0x00000edc                __aeabi_idiv
+                0x000010a8                __aeabi_idivmod
+ .text          0x000010bc        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x000010bc                __aeabi_idiv0
+                0x000010bc                __aeabi_ldiv0
+ .text          0x000010c0       0x7c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_arm_cmpdf2.o)
+                0x000010c0                __aeabi_cdrcmple
+                0x000010d0                __aeabi_cdcmple
+                0x000010d0                __aeabi_cdcmpeq
+                0x000010e0                __aeabi_dcmpeq
+                0x000010ec                __aeabi_dcmplt
+                0x00001100                __aeabi_dcmple
+                0x00001114                __aeabi_dcmpgt
+                0x00001128                __aeabi_dcmpge
+ .text          0x0000113c      0x650 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(adddf3.o)
+                0x0000113c                __aeabi_dadd
+ .text          0x0000178c      0x648 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divdf3.o)
+                0x0000178c                __aeabi_ddiv
+ .text          0x00001dd4       0x88 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(eqdf2.o)
+                0x00001dd4                __nedf2
+                0x00001dd4                __eqdf2
+ .text          0x00001e5c       0xe0 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(gedf2.o)
+                0x00001e5c                __gedf2
+                0x00001e5c                __gtdf2
+ .text          0x00001f3c       0xcc c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(ledf2.o)
+                0x00001f3c                __ledf2
+                0x00001f3c                __ltdf2
+ .text          0x00002008      0x534 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(muldf3.o)
+                0x00002008                __aeabi_dmul
+ .text          0x0000253c      0x6f4 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(subdf3.o)
+                0x0000253c                __aeabi_dsub
+ .text          0x00002c30       0x6c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(fixdfsi.o)
+                0x00002c30                __aeabi_d2iz
+ .text          0x00002c9c       0x78 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsidf.o)
+                0x00002c9c                __aeabi_i2d
+ .text          0x00002d14       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_clzsi2.o)
+                0x00002d14                __clzsi2
  *(.rodata .rodata.*)
- .rodata.CSWTCH.9
-                0x0000043c       0x3c bin/obj/system_LPC11Uxx.o
-                0x00000478                . = ALIGN (0x4)
-                0x00000478                __text_end = .
-                0x00000478                PROVIDE (_pvHeapStart, .)
-OUTPUT(bin/firmware.elf elf32-littlearm)
+ .rodata.CSWTCH.5
+                0x00002d50       0x3c bin/obj/system_LPC11Uxx.o
+ .rodata.USB_FsConfigDescriptor
+                0x00002d8c       0x40 bin/obj/descriptors.o
+                0x00002d8c                USB_FsConfigDescriptor
+ .rodata.USB_DeviceDescriptor
+                0x00002dcc       0x14 bin/obj/descriptors.o
+                0x00002dcc                USB_DeviceDescriptor
+ .rodata        0x00002de0       0x14 bin/obj/usbd.o
+ .rodata.str1.1
+                0x00002df4       0x2b bin/obj/usbd.o
+ *fill*         0x00002e1f        0x1 
+ .rodata        0x00002e20       0x40 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divdf3.o)
+ .rodata        0x00002e60       0x40 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(muldf3.o)
+                0x00002ea0                . = ALIGN (0x4)
+                0x00002ea0                __text_end = .
 
-.glue_7         0x00000478        0x0
+.glue_7         0x00002ea0        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x00000478        0x0
+.glue_7t        0x00002ea0        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x00000478        0x0
+.vfp11_veneer   0x00002ea0        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x00000478        0x0
+.v4_bx          0x00002ea0        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x00000478        0x0
+.iplt           0x00002ea0        0x0
  .iplt          0x00000000        0x0 bin/obj/startup_lpc11u_gnumake.o
 
-.igot.plt       0x00000478        0x0
- .igot.plt      0x00000000        0x0 bin/obj/startup_lpc11u_gnumake.o
-
-.data.SystemCoreClock
-                0x00000478        0x4
- .data.SystemCoreClock
-                0x00000478        0x4 bin/obj/system_LPC11Uxx.o
-                0x00000478                SystemCoreClock
-
-.rel.dyn        0x0000047c        0x0
+.rel.dyn        0x00002ea0        0x0
  .rel.iplt      0x00000000        0x0 bin/obj/startup_lpc11u_gnumake.o
 
-.bss.Cur_State  0x0000047c        0x1
- .bss.Cur_State
-                0x0000047c        0x1 bin/obj/main.o
-                0x0000047c                Cur_State
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x00002ea0                __exidx_start = .
 
-.bss.TimeTick   0x00000480        0x4
- .bss.TimeTick  0x00000480        0x4 bin/obj/main.o
-                0x00000480                TimeTick
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x00002ea0                __exidx_end = .
 
-.bss.delayRollovers
-                0x00000484        0x4
+.usb_ram        0x00000000        0x0
+ FILL mask 0xff
+ *(USB_RAM)
+
+.bss            0x10000100       0x9c
+                0x10000100                __bss_start = .
+ *(.bss*)
  .bss.delayRollovers
-                0x00000484        0x4 bin/obj/delay.o
-                0x00000484                delayRollovers
-
-.bss.delayTicks
-                0x00000488        0x4
+                0x10000100        0x4 bin/obj/delay.o
+                0x10000100                delayRollovers
  .bss.delayTicks
-                0x00000488        0x4 bin/obj/delay.o
-                0x00000488                delayTicks
+                0x10000104        0x4 bin/obj/delay.o
+                0x10000104                delayTicks
+ .bss.isConnected
+                0x10000108        0x1 bin/obj/usb_cdc.o
+ .bss.line_coding
+                0x10000109        0x7 bin/obj/usb_cdc.o
+ .bss.g_hCdc    0x10000110        0x4 bin/obj/usb_cdc.o
+ .bss.isConfigured
+                0x10000114        0x1 bin/obj/usbd.o
+ *(COMMON)
+ COMMON         0x10000115       0x80 bin/obj/usb_cdc.o
+                0x10000115                ff_cdc_tx_buffer
+                0x10000155                ff_cdc_rx_buffer
+ *fill*         0x10000195        0x3 
+ COMMON         0x10000198        0x4 bin/obj/usbd.o
+                0x10000198                g_hUsb
+ *(.heap)
+                0x1000019c                __fixed_heap_end = .
+ *(.stack)
+                0x1000019c                . = ALIGN (0x4)
+                0x1000019c                __bss_end = .
+                0x1000019c                PROVIDE (end, .)
+                0x00002ea0                __data_load_addr = LOADADDR (.data)
 
-.debug_info     0x00000000     0x4173
- .debug_info    0x00000000      0x13c bin/obj/startup_lpc11u_gnumake.o
- .debug_info    0x0000013c      0x548 bin/obj/system_LPC11Uxx.o
- .debug_info    0x00000684      0x1d3 bin/obj/main.o
- .debug_info    0x00000857      0x4c1 bin/obj/delay.o
- .debug_info    0x00000d18      0xdf0 bin/obj/gpio.o
- .debug_info    0x00001b08     0x266b bin/obj/usbd.o
+.data           0x1000019c       0xa4 load address 0x00002ea0
+ FILL mask 0xff
+                0x1000019c                __data_start = .
+ *(.data*)
+ .data.SystemCoreClock
+                0x1000019c        0x4 bin/obj/system_LPC11Uxx.o
+                0x1000019c                SystemCoreClock
+ .data.USB_StringDescriptor
+                0x100001a0       0x7c bin/obj/descriptors.o
+                0x100001a0                USB_StringDescriptor
+ .data.ff_cdc_tx
+                0x1000021c       0x10 bin/obj/usb_cdc.o
+                0x1000021c                ff_cdc_tx
+ .data.ff_cdc_rx
+                0x1000022c       0x10 bin/obj/usb_cdc.o
+                0x1000022c                ff_cdc_rx
+ .data.usb_RomDriver_buffer
+                0x1000023c        0x4 bin/obj/usbd.o
+                0x1000023c                usb_RomDriver_buffer
+                0x10000240                . = ALIGN (0x4)
+                0x10000240                __data_end = .
+                0x10000240                PROVIDE (_pvHeapStart, .)
+OUTPUT(bin/firmware.elf elf32-littlearm)
 
-.debug_abbrev   0x00000000      0xa08
- .debug_abbrev  0x00000000       0xdd bin/obj/startup_lpc11u_gnumake.o
- .debug_abbrev  0x000000dd      0x110 bin/obj/system_LPC11Uxx.o
- .debug_abbrev  0x000001ed       0xd6 bin/obj/main.o
- .debug_abbrev  0x000002c3      0x1e0 bin/obj/delay.o
- .debug_abbrev  0x000004a3      0x254 bin/obj/gpio.o
- .debug_abbrev  0x000006f7      0x311 bin/obj/usbd.o
+.igot.plt       0x10000240        0x0 load address 0x00002f44
+ .igot.plt      0x00000000        0x0 bin/obj/startup_lpc11u_gnumake.o
 
-.debug_aranges  0x00000000      0x188
+.debug_info     0x00000000     0x7d68
+ .debug_info    0x00000000      0x15a bin/obj/startup_lpc11u_gnumake.o
+ .debug_info    0x0000015a      0x52c bin/obj/system_LPC11Uxx.o
+ .debug_info    0x00000686      0x309 bin/obj/main.o
+ .debug_info    0x0000098f      0x4bf bin/obj/delay.o
+ .debug_info    0x00000e4e      0x7c6 bin/obj/fifo.o
+ .debug_info    0x00001614      0xcb1 bin/obj/gpio.o
+ .debug_info    0x000022c5      0xcc6 bin/obj/stdio.o
+ .debug_info    0x00002f8b      0x559 bin/obj/string.o
+ .debug_info    0x000034e4      0x5b5 bin/obj/descriptors.o
+ .debug_info    0x00003a99     0x1c5e bin/obj/usb_cdc.o
+ .debug_info    0x000056f7     0x2671 bin/obj/usbd.o
+
+.debug_abbrev   0x00000000     0x153c
+ .debug_abbrev  0x00000000       0xee bin/obj/startup_lpc11u_gnumake.o
+ .debug_abbrev  0x000000ee       0xf0 bin/obj/system_LPC11Uxx.o
+ .debug_abbrev  0x000001de       0xa5 bin/obj/main.o
+ .debug_abbrev  0x00000283      0x1e0 bin/obj/delay.o
+ .debug_abbrev  0x00000463      0x2be bin/obj/fifo.o
+ .debug_abbrev  0x00000721      0x22b bin/obj/gpio.o
+ .debug_abbrev  0x0000094c      0x2b3 bin/obj/stdio.o
+ .debug_abbrev  0x00000bff      0x18a bin/obj/string.o
+ .debug_abbrev  0x00000d89       0xc4 bin/obj/descriptors.o
+ .debug_abbrev  0x00000e4d      0x3de bin/obj/usb_cdc.o
+ .debug_abbrev  0x0000122b      0x311 bin/obj/usbd.o
+
+.debug_aranges  0x00000000      0x360
  .debug_aranges
                 0x00000000       0x50 bin/obj/startup_lpc11u_gnumake.o
  .debug_aranges
@@ -541,39 +543,68 @@ OUTPUT(bin/firmware.elf elf32-littlearm)
  .debug_aranges
                 0x00000098       0x48 bin/obj/delay.o
  .debug_aranges
-                0x000000e0       0x68 bin/obj/gpio.o
+                0x000000e0       0x40 bin/obj/fifo.o
  .debug_aranges
-                0x00000148       0x40 bin/obj/usbd.o
+                0x00000120       0x68 bin/obj/gpio.o
+ .debug_aranges
+                0x00000188       0x88 bin/obj/stdio.o
+ .debug_aranges
+                0x00000210       0x80 bin/obj/string.o
+ .debug_aranges
+                0x00000290       0x18 bin/obj/descriptors.o
+ .debug_aranges
+                0x000002a8       0x78 bin/obj/usb_cdc.o
+ .debug_aranges
+                0x00000320       0x40 bin/obj/usbd.o
 
-.debug_ranges   0x00000000      0x160
+.debug_ranges   0x00000000      0x410
  .debug_ranges  0x00000000       0x40 bin/obj/startup_lpc11u_gnumake.o
  .debug_ranges  0x00000040       0x18 bin/obj/system_LPC11Uxx.o
  .debug_ranges  0x00000058       0x10 bin/obj/main.o
  .debug_ranges  0x00000068       0x50 bin/obj/delay.o
- .debug_ranges  0x000000b8       0x58 bin/obj/gpio.o
- .debug_ranges  0x00000110       0x50 bin/obj/usbd.o
+ .debug_ranges  0x000000b8       0xd8 bin/obj/fifo.o
+ .debug_ranges  0x00000190       0x70 bin/obj/gpio.o
+ .debug_ranges  0x00000200       0xf0 bin/obj/stdio.o
+ .debug_ranges  0x000002f0       0x70 bin/obj/string.o
+ .debug_ranges  0x00000360       0x68 bin/obj/usb_cdc.o
+ .debug_ranges  0x000003c8       0x48 bin/obj/usbd.o
 
-.debug_line     0x00000000      0xbd7
- .debug_line    0x00000000       0x80 bin/obj/startup_lpc11u_gnumake.o
- .debug_line    0x00000080      0x1bc bin/obj/system_LPC11Uxx.o
- .debug_line    0x0000023c      0x159 bin/obj/main.o
- .debug_line    0x00000395      0x1eb bin/obj/delay.o
- .debug_line    0x00000580      0x2c5 bin/obj/gpio.o
- .debug_line    0x00000845      0x392 bin/obj/usbd.o
+.debug_line     0x00000000     0x199e
+ .debug_line    0x00000000       0xa1 bin/obj/startup_lpc11u_gnumake.o
+ .debug_line    0x000000a1      0x19a bin/obj/system_LPC11Uxx.o
+ .debug_line    0x0000023b      0x17e bin/obj/main.o
+ .debug_line    0x000003b9      0x1e8 bin/obj/delay.o
+ .debug_line    0x000005a1      0x2ec bin/obj/fifo.o
+ .debug_line    0x0000088d      0x2b7 bin/obj/gpio.o
+ .debug_line    0x00000b44      0x381 bin/obj/stdio.o
+ .debug_line    0x00000ec5      0x254 bin/obj/string.o
+ .debug_line    0x00001119      0x143 bin/obj/descriptors.o
+ .debug_line    0x0000125c      0x3b5 bin/obj/usb_cdc.o
+ .debug_line    0x00001611      0x38d bin/obj/usbd.o
 
-.debug_str      0x00000000     0x2022
- .debug_str     0x00000000      0x1e6 bin/obj/startup_lpc11u_gnumake.o
-                                0x21a (size before relaxing)
- .debug_str     0x000001e6      0x2c6 bin/obj/system_LPC11Uxx.o
-                                0x449 (size before relaxing)
- .debug_str     0x000004ac       0x5c bin/obj/main.o
-                                0x212 (size before relaxing)
- .debug_str     0x00000508      0x31a bin/obj/delay.o
-                                0x519 (size before relaxing)
- .debug_str     0x00000822      0x18e bin/obj/gpio.o
-                                0x808 (size before relaxing)
- .debug_str     0x000009b0     0x1672 bin/obj/usbd.o
-                               0x1ebc (size before relaxing)
+.debug_str      0x00000000     0x258e
+ .debug_str     0x00000000      0x1e7 bin/obj/startup_lpc11u_gnumake.o
+                                0x21b (size before relaxing)
+ .debug_str     0x000001e7      0x2b5 bin/obj/system_LPC11Uxx.o
+                                0x439 (size before relaxing)
+ .debug_str     0x0000049c      0x636 bin/obj/main.o
+                                0x7ce (size before relaxing)
+ .debug_str     0x00000ad2      0x32a bin/obj/delay.o
+                                0x50f (size before relaxing)
+ .debug_str     0x00000dfc      0x128 bin/obj/fifo.o
+                                0x52e (size before relaxing)
+ .debug_str     0x00000f24      0x19a bin/obj/gpio.o
+                                0x7fe (size before relaxing)
+ .debug_str     0x000010be      0x10c bin/obj/stdio.o
+                                0x2ba (size before relaxing)
+ .debug_str     0x000011ca      0x108 bin/obj/string.o
+                                0x2ae (size before relaxing)
+ .debug_str     0x000012d2      0x455 bin/obj/descriptors.o
+                                0x712 (size before relaxing)
+ .debug_str     0x00001727      0xa5a bin/obj/usb_cdc.o
+                               0x16a8 (size before relaxing)
+ .debug_str     0x00002181      0x40d bin/obj/usbd.o
+                               0x1eb2 (size before relaxing)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 bin/obj/startup_lpc11u_gnumake.o
@@ -581,43 +612,96 @@ OUTPUT(bin/firmware.elf elf32-littlearm)
  .comment       0x00000000       0x71 bin/obj/system_LPC11Uxx.o
  .comment       0x00000000       0x71 bin/obj/main.o
  .comment       0x00000000       0x71 bin/obj/delay.o
+ .comment       0x00000000       0x71 bin/obj/fifo.o
  .comment       0x00000000       0x71 bin/obj/gpio.o
+ .comment       0x00000000       0x71 bin/obj/stdio.o
+ .comment       0x00000000       0x71 bin/obj/string.o
+ .comment       0x00000000       0x71 bin/obj/descriptors.o
+ .comment       0x00000000       0x71 bin/obj/usb_cdc.o
  .comment       0x00000000       0x71 bin/obj/usbd.o
 
 .ARM.attributes
-                0x00000000       0x31
+                0x00000000       0x32
  .ARM.attributes
-                0x00000000       0x31 bin/obj/startup_lpc11u_gnumake.o
+                0x00000000       0x32 bin/obj/startup_lpc11u_gnumake.o
  .ARM.attributes
-                0x00000031       0x31 bin/obj/system_LPC11Uxx.o
+                0x00000032       0x32 bin/obj/system_LPC11Uxx.o
  .ARM.attributes
-                0x00000062       0x31 bin/obj/main.o
+                0x00000064       0x32 bin/obj/main.o
  .ARM.attributes
-                0x00000093       0x31 bin/obj/delay.o
+                0x00000096       0x32 bin/obj/delay.o
  .ARM.attributes
-                0x000000c4       0x31 bin/obj/gpio.o
+                0x000000c8       0x32 bin/obj/fifo.o
  .ARM.attributes
-                0x000000f5       0x31 bin/obj/usbd.o
+                0x000000fa       0x32 bin/obj/gpio.o
  .ARM.attributes
-                0x00000126       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+                0x0000012c       0x32 bin/obj/stdio.o
  .ARM.attributes
-                0x00000144       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+                0x0000015e       0x32 bin/obj/string.o
+ .ARM.attributes
+                0x00000190       0x32 bin/obj/descriptors.o
+ .ARM.attributes
+                0x000001c2       0x32 bin/obj/usb_cdc.o
+ .ARM.attributes
+                0x000001f4       0x32 bin/obj/usbd.o
+ .ARM.attributes
+                0x00000226       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x00000244       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000262       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000280       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x0000029e       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(adddf3.o)
+ .ARM.attributes
+                0x000002ca       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divdf3.o)
+ .ARM.attributes
+                0x000002f6       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(eqdf2.o)
+ .ARM.attributes
+                0x00000322       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(gedf2.o)
+ .ARM.attributes
+                0x0000034e       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(ledf2.o)
+ .ARM.attributes
+                0x0000037a       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(muldf3.o)
+ .ARM.attributes
+                0x000003a6       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(subdf3.o)
+ .ARM.attributes
+                0x000003d2       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(fixdfsi.o)
+ .ARM.attributes
+                0x000003fe       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsidf.o)
+ .ARM.attributes
+                0x0000042a       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_clzsi2.o)
 
-.debug_frame    0x00000000      0x304
- .debug_frame   0x00000000       0x88 bin/obj/startup_lpc11u_gnumake.o
- .debug_frame   0x00000088       0x44 bin/obj/system_LPC11Uxx.o
- .debug_frame   0x000000cc       0x30 bin/obj/main.o
- .debug_frame   0x000000fc       0x84 bin/obj/delay.o
- .debug_frame   0x00000180       0xe0 bin/obj/gpio.o
- .debug_frame   0x00000260       0x84 bin/obj/usbd.o
- .debug_frame   0x000002e4       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+.debug_frame    0x00000000      0xa10
+ .debug_frame   0x00000000       0x90 bin/obj/startup_lpc11u_gnumake.o
+ .debug_frame   0x00000090       0x48 bin/obj/system_LPC11Uxx.o
+ .debug_frame   0x000000d8       0x28 bin/obj/main.o
+ .debug_frame   0x00000100       0x8c bin/obj/delay.o
+ .debug_frame   0x0000018c       0xa0 bin/obj/fifo.o
+ .debug_frame   0x0000022c       0xec bin/obj/gpio.o
+ .debug_frame   0x00000318      0x1bc bin/obj/stdio.o
+ .debug_frame   0x000004d4      0x140 bin/obj/string.o
+ .debug_frame   0x00000614      0x14c bin/obj/usb_cdc.o
+ .debug_frame   0x00000760       0x84 bin/obj/usbd.o
+ .debug_frame   0x000007e4       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000804       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(_divsi3.o)
+ .debug_frame   0x00000824       0x38 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(adddf3.o)
+ .debug_frame   0x0000085c       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(divdf3.o)
+ .debug_frame   0x00000898       0x38 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(eqdf2.o)
+ .debug_frame   0x000008d0       0x38 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(gedf2.o)
+ .debug_frame   0x00000908       0x38 c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(ledf2.o)
+ .debug_frame   0x00000940       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(muldf3.o)
+ .debug_frame   0x0000097c       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(subdf3.o)
+ .debug_frame   0x000009b8       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(fixdfsi.o)
+ .debug_frame   0x000009e4       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m\libgcc.a(floatsidf.o)
 
-.debug_loc      0x00000000      0xa4c
- .debug_loc     0x00000000       0x8f bin/obj/system_LPC11Uxx.o
- .debug_loc     0x0000008f       0xab bin/obj/delay.o
- .debug_loc     0x0000013a      0x83a bin/obj/gpio.o
- .debug_loc     0x00000974       0xd8 bin/obj/usbd.o
-
-.bss            0x10000000        0x4
- COMMON         0x10000000        0x4 bin/obj/usbd.o
-                0x10000000                g_hUsb
+.debug_loc      0x00000000     0x2aa8
+ .debug_loc     0x00000000       0x57 bin/obj/system_LPC11Uxx.o
+ .debug_loc     0x00000057       0x7f bin/obj/delay.o
+ .debug_loc     0x000000d6      0x35d bin/obj/fifo.o
+ .debug_loc     0x00000433      0x614 bin/obj/gpio.o
+ .debug_loc     0x00000a47     0x11df bin/obj/stdio.o
+ .debug_loc     0x00001c26      0x8d7 bin/obj/string.o
+ .debug_loc     0x000024fd      0x4d9 bin/obj/usb_cdc.o
+ .debug_loc     0x000029d6       0xd2 bin/obj/usbd.o

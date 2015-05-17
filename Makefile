@@ -10,7 +10,7 @@ BOARD=CFG_BRD_RF1GHZUSB
 # Set TARGET to 'lpc11u' or 'lpc13u' depending on the target MCU
 TARGET = lpc11u
 ifeq (lpc11u,$(TARGET))
-  CORE = cortex-m0
+  CORE = cortex-m0plus
   LDSCRIPT = cmsis/lpc11u68.ld
 else
   CORE = cortex-m3
@@ -18,7 +18,7 @@ else
 endif
 
 # Set OPTIMIZATION to '0', '1', '2', '3' or 's'
-OPTIMIZATION = 2
+OPTIMIZATION = s
 
 ##########################################################################
 # Output directories

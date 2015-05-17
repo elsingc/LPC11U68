@@ -109,11 +109,7 @@ extern int main(void);
 
 __attribute__ ((section(".isr_vector_table")))
 void (* const Vectors[])(void) = {
-#ifdef FIXED_STACKHEAP_SIZE
-  (void (*)(void))(StackMem + STACK_SIZE),          // The initial stack pointer
-#else
   (void (*)(void))&__StackTop,
-#endif
   Reset_Handler,                    // The reset handler
   NMI_Handler,                      // The NMI handler
   HardFault_Handler,                // The hard fault handler
@@ -190,7 +186,7 @@ void Reset_Handler(void)
   //while (dst < &__bss_end)
   //  *dst++ = 0;
 
-  //SystemInit();
+  SystemInit();
 
 #if defined (__cplusplus)
   //
@@ -222,6 +218,7 @@ void NMI_Handler(void)
 {
     while(1)
     {
+    //	main();
     }
 }
 
@@ -230,6 +227,7 @@ void HardFault_Handler(void)
 {
     while(1)
     {
+    	main();
     }
 }
 
